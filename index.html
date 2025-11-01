@@ -15,23 +15,9 @@
 </head>
 <script>
     audio = null // 声明音频变量
-    baseUrl = 'https://quanx123.github.io/mysite/' // 基础链接
+    baseUrl = 'https://quanx123.github.io/mysite' // 基础链接
     function goto(url,base=''){
         window.location.href = base+url; // 跳转到指定链接
-    }
-</script>
-<script>
-    function playAudio(event) {
-        audio = new Audio('https://dlink.host/musics/aHR0cHM6Ly9vbmVkcnYtbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvc3Rvcl9vbmVkcnZfb25taWNyb3NvZnRfY29tL0VWYU5YNnc5OElOS2w4TkJMRXpIbkJNQkVsS1E5ZEFRLUd3Vml3MzFOYUhOMkE.mp3');
-        audio.volume = 0.6; // 设置音量为50%
-        audio.loop = true; // 循环播放
-        audio.play();
-        document.getElementById('d1').style.opacity = 0; // 设置透明度为0
-        button = document.getElementById('b'); // 获取按钮元素
-        button.style.pointerEvents = 'none'; // 禁用按钮点击事件
-        button.classList.add('滑动'); // 添加滑动动画类
-        document.getElementById('b').style.color = 'rgb(166, 114, 153)' // 设置颜色
-        button.style.pointerEvents =  'none'; // 禁用按钮点击事件
     }
 </script>
 <body style="position: relative;">
