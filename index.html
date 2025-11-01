@@ -20,9 +20,19 @@
         window.location.href = base+url; // 跳转到指定链接
     }
 </script>
+<script>
+    function init(event) {
+        document.getElementById('d1').style.opacity = 0; // 设置透明度为0
+        button = document.getElementById('b'); // 获取按钮元素
+        button.style.pointerEvents = 'none'; // 禁用按钮点击事件
+        button.classList.add('滑动'); // 添加滑动动画类
+        document.getElementById('b').style.color = 'rgb(166, 114, 153)' // 设置颜色
+        button.style.pointerEvents =  'none'; // 禁用按钮点击事件
+    }
+</script>
 <body style="position: relative;">
     <div id="d1" >
-        <button id="b" onclick="playAudio(event)" >
+        <button id="b" onclick="init(event)" >
             进入<span style="font-size: 4.2rem;display: inline-block;" class="layui-icon layui-icon-right"></span>
         </button>
     </div>
