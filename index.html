@@ -15,10 +15,6 @@
 </head>
 <script>
     audio = null // 声明音频变量
-    baseUrl = 'https://quanx123.github.io/mysite' // 基础链接
-    function goto(url,base=''){
-        window.location.href = base+url; // 跳转到指定链接
-    }
 </script>
 <script>
     function init(event) {
@@ -57,13 +53,13 @@
                     <tr>
                         <td class="a">怎么了 --Jaychou</td>
                         <td class="b">./怎么了.html</td>
-                        <td><button type="button" onclick="goto('/怎么了.html',baseUrl)" class="layui-btn">前往</button></td>
+                        <td><button type="button" onclick="history.pushState({},'','./怎么了.html');history.go()" class="layui-btn">前往</button></td>
                     </tr>
 
                     <tr>
                         <td class="a">LayUI</td>
                         <td class="b">https://layui.dev/</td>
-                        <td><button type="button" onclick="goto('https://layui.dev/')" class="layui-btn">前往</button></td>
+                        <td><button type="button" onclick="window.location.href = 'https://layui.dev/'" class="layui-btn">前往</button></td>
                     </tr>
 
 
